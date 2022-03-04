@@ -1,0 +1,246 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Sarabun:wght@300&display=swap');
+* {
+    box-sizing: border-box;
+}
+html {
+    height:100%;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-family: Lato;
+    font-size: 3.5em;
+    font-weight: 700px;
+}
+h2{
+    font-family: Lato;
+    font-size: 2.5em;
+    font-weight: 400px;
+    color:rgb(9, 52, 77);
+}
+body {
+    background-color: azure;
+    font-family: "lato";
+    max-width: 1440px;
+}
+header {
+    display:flex;
+    justify-content: center;
+    background-color: rgb(50, 105, 177);
+    flex-direction: column;
+    color:rgb(255, 255, 255)
+}
+.head {
+ display: flex;
+ flex-direction: row;
+ color:rgb(255, 255, 255);
+
+}
+.logo_container {
+    height: 100px; 
+    width: 10%;
+ 
+}
+#logosim {
+    height: 90px;
+    width:auto;
+    align-items: center;
+}
+nav {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    gap: 10rem;
+    color:rgb(255, 255, 255);
+    width: 90%;
+    justify-content: end;
+    padding-right: 5%;
+}
+    ul {
+    display: flex;
+    align-items: flex-end;
+    gap: 2rem;
+    flex-direction: row;
+    }
+  
+    li {
+    user-select: none;
+    color:rgb(255, 255, 255);
+    }
+  
+    a:hover {
+    cursor: pointer;
+    color: rgb(196, 121, 23);
+  }
+  .main { 
+
+      background-color: transparent;
+      display:flex;
+      padding-left: 10px;
+      
+  }
+#title {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    }
+#image1{
+    height: 400px;
+    width:auto;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+button {
+    width: 90px;
+    height: 40px;
+    background-color:cadetblue;
+    border-radius: 20px;
+    padding: 10px;
+    
+}
+button:hover{
+    background-color: rgb(21, 111, 114);
+    color: aliceblue;
+    cursor: pointer;
+}
+.content {
+ background-color: aliceblue;
+ display: flex;
+ flex-direction: column;
+align-items: center;
+
+}
+.cards {
+    display:flex;
+    width: 70%;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.card {
+    background-color: rgba(42, 73, 141, 0.226);
+    width: 170px;
+    height: 270px;
+    border-radius: 7px;
+    justify-content: center;
+    font-weight: bold;
+    color: rgb(5, 33, 58);
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.img1{
+    height: 100px;
+    width: auto;
+    border-radius: 15px;
+    border: 2px solid rgb(14, 49, 114);
+    padding: 5px;
+    align-content: center;
+}
+#textsuport{
+    text-align: justify;
+    padding: 5px;
+}
+.quote_container{
+    background-color: rgba(92, 138, 197, 0.726);
+    width: 100%;
+    height: 350px;
+
+}
+.quote {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(13, 42, 68);
+}
+.quote_final{
+    font-family: Sarabun;
+    font-size: 50px;
+    width: 70%;
+    max-width: fit-content;
+}
+.author {
+   font-size: 20px; 
+   font-style: italic;
+   padding-bottom: 30px;
+   font-weight: bold;
+
+}
+.action {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center ;
+}
+.action_container {
+    background-color: rgb(50, 105, 177);
+    width: 600px;
+    height: auto;
+    border-radius: 20px;    
+    margin: 20px;
+    padding:10px;
+    color:aliceblue;
+    text-align: justify;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-right: 30px;
+   
+}
+.sign-up {   
+padding-right: 60px;
+}
+b {
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 700px;
+}
+.butcont {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+footer {
+    background-color: rgb(50, 105, 177);
+    height: 50px;
+}
+.footcontainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#foot {
+    color:aliceblue;
+}
+@media screen and (max-width: 700px) {
+    .head, .nav  {   
+      flex-direction:column
+    }
+    .main {
+        flex-direction: column-reverse;
+    }
+    #image1{
+        margin: 20px;
+        width:300px;
+        height: auto;
+    }
+    .quote_final {
+        flex-wrap: wrap;
+        font-size: 30px;
+    }
+    .author {
+        font-size: 18px;
+    }
+    #foot {
+        font-size: 12px;
+    }
